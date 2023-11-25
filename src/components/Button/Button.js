@@ -1,11 +1,12 @@
 import css from './Button.module.css'; 
 
-function Button({ handlePageIncrement }) {
+const button = ({ getMoreImage }) => {
+  
   return (
-    <button className={css.button} type="button" onClick={handlePageIncrement}>
+    <button className={css.button} type="button" onClick={getMoreImage}>
       Load more
     </button>
   );
 }
-
-export default Button;
+ 
+export default button;    
